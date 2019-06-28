@@ -4,12 +4,12 @@ banner() {
     echo "+------------------------------------------------------------------------+"
     printf "| %-70s |\n" "`date`"
     echo "|                                                                        |"
-    printf "|`tput bold` %-70s `tput sgr0`|\n" "$@"
+    printf "| %-70s |\n" "$@"
     echo "+------------------------------------------------------------------------+"
 }
 
 one_banner() {
-    printf "`tput bold` %-70s `tput sgr0`\n" "`date` $@"
+    printf " %-70s \n" "`date` $@"
 }
 
 VM_WORKER=$1
